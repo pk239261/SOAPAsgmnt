@@ -1,0 +1,115 @@
+2020-12-06 21:20:10,550 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-06 21:20:11,488 INFO  [log] [3430]
+2020-12-06 21:20:13,703 INFO  [log] [349]
+2020-12-06 21:20:16,033 INFO  [log] Testcase name is TestCase 1
+2020-12-06 21:20:16,043 INFO  [log] TestSuite name is TestSuite2Groovy
+2020-12-06 21:20:17,471 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductRepositoryV1SaveRequest>\r
+         <product>\r
+            <sku>SKU00001</sku>
+			<name>MacBook Air</name>
+			<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+			<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>\r
+      </def:catalogProductRepositoryV1SaveRequest>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-06 21:20:17,776 INFO  [log] Sku code created is  SKU00001
+2020-12-06 21:20:17,778 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1GetRequest>
+         <sku>SKU00001</sku>
+      </def:catalogProductRepositoryV1GetRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-06 21:20:17,789 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1GetRequest>
+         <sku>SKU00001</sku>
+      </def:catalogProductRepositoryV1GetRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-06 21:20:18,821 INFO  [log] SKU00001
+2020-12-06 21:20:19,863 INFO  [log] SKU00001
+2020-12-06 21:20:20,891 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1GetRequest>
+         <sku>SKU00001</sku>
+      </def:catalogProductRepositoryV1GetRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-06 21:20:20,897 INFO  [log] Code to enter is  SKU00001
+2020-12-06 21:20:20,900 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1GetRequest>
+         <sku>SKU00001</sku>
+      </def:catalogProductRepositoryV1GetRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-06 21:20:22,813 INFO  [log] Response is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1GetResponse>
+         <result>
+            <id>12342047</id>
+            <sku>SKU00001</sku>
+            <name>MacBook Air</name>
+            <attributeSetId>4</attributeSetId>
+            <price>100</price>
+            <status>1</status>
+            <visibility>4</visibility>
+            <typeId>simple</typeId>
+            <createdAt>2020-12-06 15:50:15</createdAt>
+            <updatedAt>2020-12-06 15:50:17</updatedAt>
+            <extensionAttributes>
+               <websiteIds>
+                  <item>1</item>
+               </websiteIds>
+            </extensionAttributes>
+            <productLinks/>
+            <options/>
+            <mediaGalleryEntries/>
+            <tierPrices/>
+            <customAttributes>
+               <item>
+                  <attributeCode>options_container</attributeCode>
+                  <value>container2</value>
+               </item>
+               <item>
+                  <attributeCode>msrp_display_actual_price_type</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>url_key</attributeCode>
+                  <value>macbook-air</value>
+               </item>
+               <item>
+                  <attributeCode>required_options</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>has_options</attributeCode>
+                  <value>0</value>
+               </item>
+               <item>
+                  <attributeCode>tax_class_id</attributeCode>
+                  <value>2</value>
+               </item>
+               <item>
+                  <attributeCode>category_ids</attributeCode>
+                  <value/>
+               </item>
+            </customAttributes>
+         </result>
+      </ns1:catalogProductRepositoryV1GetResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-06 21:20:22,863 INFO  [log] sku code is SKU00001
